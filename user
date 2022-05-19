@@ -1,7 +1,0 @@
-if ($_POST['clearcart'] == 'Clear Cart') {
-    $read[$_SESSION['email']]['cartDetail'] = array();
-    $clearCart = json_encode($read,JSON_PRETTY_PRINT);
-    file_put_contents("files/userData.json",$clearCart); 
-    exit;
-}
-<input type="submit" name="clearcart" class="btn btn-danger my-2" value="Clear Cart">
